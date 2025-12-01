@@ -8,7 +8,7 @@ A robust, dependency-free Python tool for auditing web security headers and cook
 
 - **Strict Validation**: Doesn't just check if a header exists; checks if it is secure.
 
-- **HSTS**: Validates max-age >= 1 year (31536000s) and presence of `includeSubDomains`.
+- **HSTS**: Validates `max-age >= 1 year (31536000s)` and presence of `includeSubDomains`.
 
 - **CSP**: Flags dangerous directives like `unsafe-inline`, `unsafe-eval`, or `default-src *`.
 
