@@ -24,9 +24,23 @@ A robust, dependency-free Python tool for auditing web security headers and cook
 
 ## Usage
 
+**Basic**
 Open your terminal and run the script followed by the domains or full URLs you want to check.
 ```
 python3 security_headers_check.py <domain1> <domain2> ...
+```
+
+**Create Report**
+Great for sharing results with DevOps. This creates a clean text file with all ANSI color codes automatically removed.
+
+Use the `-o` (or `--output`) argument:
+```
+python3 security_headers_check.py example.com -o scan_results.txt
+```
+
+Also works for multiple domains:
+```
+python3 security_headers_check.py example_one.com example_two.com -o full_audit.txt
 ```
 
 ## Examples
